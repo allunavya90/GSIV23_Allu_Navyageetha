@@ -18,9 +18,9 @@ const Cards = ({ query }) => {
   let { data } = movie;
   console.log(data);
 
-  const filteredMovies = data.results.filter((item) =>
-    item.original_title.toLowerCase().includes(query.toLowerCase())
-  );
+  // const filteredMovies = data.results.filter((item) =>
+  //   item.original_title.toLowerCase().includes(query.toLowerCase())
+  // );
 
   useEffect(() => {
     dispatch(fetchMovies());
@@ -80,7 +80,7 @@ const Cards = ({ query }) => {
         ))
       ) : (
         <>
-          {filteredMovies.map((ele) => (
+          {/* {filteredMovies.map((ele) => (
             <div
               className="card border-2"
               style={{
@@ -120,7 +120,7 @@ const Cards = ({ query }) => {
                 <p className="card-text">{ele.overview}</p>
               </div>
             </div>
-          ))}
+          ))} */}
         </>
       )}
     </>
